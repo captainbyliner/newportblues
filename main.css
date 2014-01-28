@@ -55,6 +55,7 @@ nav {
 	font-family: serif;
 	font-size: 44px;
 	top:0;
+	position:fixed;
 }
 
 #textchange {
