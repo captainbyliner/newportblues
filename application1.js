@@ -49,7 +49,30 @@ else {
 
 
     }
+
+    if (guessVal < randomNumber) {
+        if (guessVal > previousGuess) {
+            console.log("Warmer")
+        }
+        else {
+            console.log("Colder")
+        }
+    }
+    else if (guessVal > randomNumber) {
+        if (guessVal < previousGuess) {
+            console.log("Warmer")
+        } else {
+            console.log("Colder")
+        }
+    }
+    else {
+        console.log("Correct Answer")
+    }
 }
+
+
+
+
 
 
 
