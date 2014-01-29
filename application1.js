@@ -53,9 +53,12 @@ else {
     if (guessVal < randomNumber) {
         if (guessVal > previousGuess) {
             console.log("Warmer")
+            $("#guide").css("background-color", "pink");
+ 
         }
         else {
             console.log("Colder")
+            $("#guide").css("background-color", "blue");
         }
     }
     else if (guessVal > randomNumber) {
