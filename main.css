@@ -61,6 +61,11 @@ nav {
 #textchange {
 }
 
+#guidechange {
+
+
+}
+
 .container {
 	width:100%;
 	height:1000px;
@@ -99,7 +104,12 @@ nav {
 		height:100px;
 		background-color:silver;
 		border-radius:100px;
-		margin-top:150px;
+		float:right;
+		margin-right:100px;
+		margin-top:200px;
+		line-height:100px;
+		text-align:center;
+		color:white;
 	}
 
 
