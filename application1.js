@@ -5,6 +5,15 @@ var randomNumber = Math.floor((Math.random()*100)+1);
  var guesses = [];
 
 $(document).ready(function(){
+
+$("#resetbutton").click(function() {
+    location.reload();
+
+
+});
+
+
+
     $("#guessbutton").click(function(){
 
 
