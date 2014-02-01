@@ -13,7 +13,6 @@ $("#resetbutton").click(function() {
 });
 
 
-
     $("#guessbutton").click(function(){
 
 
@@ -59,30 +58,58 @@ else {
 
     }
 
-    if (guessVal < randomNumber) {
-        if (guessVal > previousGuess) {
-            console.log("Warmer")
-            $("#guide").css("background-color", "orange");
-            $("#guidechange").text("Warmer");
- 
-        }
-        else {
-            console.log("Colder")
-            $("#guide").css("background-color", "blue");
-            $("#guidechange").text("Colder");
-        }
-    }
-    else if (guessVal > randomNumber) {
-        if (guessVal < previousGuess) {
-            console.log("Warmer")
-        } else {
-            console.log("Colder")
-        }
-    }
-    else {
-        console.log("Correct Answer")
-    }
+var difference = Math.abs(randomNumber - guessVal);
+console.log(difference);
+
+var BURNING = 5;
+var HOT = 10;
+var WARM = 20;
+var COOL = 30;
+var COLD = 40;
+var ICEBABY = 50
+
+if (difference <= BURNING) {
+    $("#guide").css("background-color", "red");
+    $("#guidechange").text("Burning!");
 }
+
+else if (difference <= HOT) {
+    $("#guide").css("background-color", "#ff3333");
+    $("#guidechange").text("Hot");
+}
+
+else if (difference <=WARM) {
+    $("#guide").css("background-color", "#ff6666");
+    $("#guidechange").text("Warm");
+}
+
+else if (difference <= COOL) {
+    $("#guide").css("background-color", "#66C2E0");
+    $("#guidechange").text("Cool");
+}
+
+else if (difference <= COLD) {
+    $("#guide").css("background-color", "#0066CC");
+    $("#guidechange").text("Cold");
+}
+
+else if (difference === 0) {
+    $("#guide").css("background-color", "purple");
+    $("#guidechange").text("Got It!!!");
+}
+else {
+    $("#guide").css("background-color", "blue");
+    $("#guidechange").text("Ice Baby");
+}
+}
+
+
+
+
+
+
+
+
 
 
 

@@ -100,7 +100,8 @@ nav {
 	margin-top:150px;
 }
 
-#guide {width:100px;
+#guide {
+		width:100px;
 		height:100px;
 		background-color:silver;
 		border-radius:100px;
@@ -110,7 +111,7 @@ nav {
 		margin-top:200px;
 		line-height:100px;
 		text-align:center;
-		color:white;
+		color:black;
 	}
 
 
@@ -169,6 +170,7 @@ li {
 	height:25px;
 	margin-top:77px;
 	float:left;
+	border-radius: 15px;
 }
 .buttonbar { 
 border: 1px solid black;
