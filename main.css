@@ -142,7 +142,7 @@ nav {
 }
 
 #resetbutton {
-	margin-left: 65px;
+	margin-left: 40px;
 }
 
 
@@ -165,7 +165,7 @@ li {
 
 #textbar {
 	border: 10px solid silver;
-	width:50px;
+	width:100px;
 	height:25px;
 	margin-top:77px;
 	float:left;
