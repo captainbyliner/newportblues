@@ -58,6 +58,11 @@ nav {
 	position:fixed;
 }
 
+#title {
+	color:silver;
+	font-size:50px;
+}
+
 #textchange {
 }
 
@@ -132,6 +137,21 @@ nav {
 	border-radius:50px;
 }
 
+#hiddendiv {
+	height:200px;
+	width:200px;
+	border-radius:200px;
+	background-color:green;
+	margin-right:auto;
+	margin-left:auto;
+	text-align:center;
+	line-height:200px;
+	display:none;
+	font-size:33px;
+	color:black;
+
+}
+
 
 .checkerc {
 	width:50px;
@@ -172,6 +192,7 @@ li {
 	float:left;
 	border-radius: 15px;
 }
+
 .buttonbar { 
 border: 1px solid black;
 height:50px;

@@ -9,7 +9,10 @@ $(document).ready(function(){
 $("#resetbutton").click(function() {
     location.reload();
 
-
+    $("#hiddendiv").click(function(){
+        location.reload();
+    });
+    
 });
 
 
@@ -34,14 +37,15 @@ guesses.push(guessVal);
 
 $("#guesses").text(guesses.join(','))
 
-
 if (guessVal == randomNumber) {
+        $("#hiddendiv").show();
         $("#meter").css("background-color", "purple");
         $("#textchange").text("You Win!!!");
         $(".container").css("background-color", "yellow");
-        $(".panel").css("background-color", "red");
-        $(".panel").text("Well played, Sir!");
-        $(".panel").css("height", "50px", "width", "200px");
+        $("#title").text("Well played, Sir!!!");
+        $("#resetbutton").hide();
+        $("#textbar").hide();
+        $("#guessbutton").hide();
 }
 
 else if (guessVal < randomNumber) {
