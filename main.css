@@ -152,6 +152,10 @@ nav {
 
 }
 
+#hiddendiv:hover {
+	background-color:red;
+}
+
 
 .checkerc {
 	width:50px;

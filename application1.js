@@ -9,9 +9,10 @@ $(document).ready(function(){
 $("#resetbutton").click(function() {
     location.reload();
 
-    $("#hiddendiv").click(function(){
-        location.reload();
     });
+	
+	 $("#hiddendiv").click(function(){
+        location.reload();
     
 });
 
