@@ -34,28 +34,27 @@ function checkGuess(guessVal) {
         previousGuess = guesses[guesses.length - 1];
     }
 
-guesses.push(guessVal);
-
-
-$("#guesses").text(guesses.join(','))
-
 if (isNaN(guessVal)) {
     alert("Pick A Number!");
     return false;
 }
 
+guesses.push(guessVal);
 
 
+$("#guesses").text(guesses.join(','))
 
 if (guessVal == randomNumber) {
         $("#hiddendiv").show();
         $("#meter").css("background-color", "purple");
         $("#textchange").text("You Win!!!");
         $(".container").css("background-color", "yellow")  ;
-        $("#title").text("Well played, Sir!!!");
+        $("#title").text("Well played!!!");
+        $("#title").css("color", "red");
         $("#resetbutton").hide();
         $("#textbar").hide();
         $("#guessbutton").hide();
+        alert("It took you " + guesses.length + " attempts");
 }
 
 else if (guessVal < randomNumber) {
