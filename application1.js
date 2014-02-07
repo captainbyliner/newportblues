@@ -46,7 +46,7 @@ $("#guesses").text(guesses.join(','))
 
 if (guessVal == randomNumber) {
         $("#hiddendiv").show();
-        $("#meter").css("background-color", "purple");
+        $("#meter").css("background-color", "green");
         $("#textchange").text("You Win!!!");
         $(".container").css("background-color", "yellow")  ;
         $("#title").text("Well played!!!");
@@ -54,7 +54,8 @@ if (guessVal == randomNumber) {
         $("#resetbutton").hide();
         $("#textbar").hide();
         $("#guessbutton").hide();
-        alert("It took you " + guesses.length + " attempts");
+        $("#hiddendivtext").text("It took you " + guesses.length + " attempts");
+        $("#guesses").css("background-color", "#33CC33");
 }
 
 else if (guessVal < randomNumber) {

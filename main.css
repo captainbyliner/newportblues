@@ -141,7 +141,7 @@ nav {
 	height:200px;
 	width:200px;
 	border-radius:200px;
-	background-color:green;
+	background-color:red;
 	margin-right:auto;
 	margin-left:auto;
 	text-align:center;
@@ -153,7 +153,14 @@ nav {
 }
 
 #hiddendiv:hover {
-	background-color:red;
+	background-color:green;
+}
+
+#hiddendivtext {
+	color:red;
+	margin-top: -80px;
+	margin-right:-100px;
+	margin-left:-100px;
 }
 
 
