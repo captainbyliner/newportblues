@@ -1,5 +1,6 @@
 var randomNumber = Math.floor((Math.random()*100)+1);
- 
+
+
  console.log(randomNumber);
 
  var guesses = [];
@@ -38,11 +39,19 @@ guesses.push(guessVal);
 
 $("#guesses").text(guesses.join(','))
 
+if (isNaN(guessVal)) {
+    alert("Pick A Number!");
+    return false;
+}
+
+
+
+
 if (guessVal == randomNumber) {
         $("#hiddendiv").show();
         $("#meter").css("background-color", "purple");
         $("#textchange").text("You Win!!!");
-        $(".container").css("background-color", "yellow");
+        $(".container").css("background-color", "yellow")  ;
         $("#title").text("Well played, Sir!!!");
         $("#resetbutton").hide();
         $("#textbar").hide();
@@ -106,6 +115,8 @@ else {
     $("#guide").css("background-color", "blue");
     $("#guidechange").text("Ice Baby");
 }
+
+
 }
 
 
