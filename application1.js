@@ -28,6 +28,14 @@ $("#resetbutton").click(function() {
 
 });
 
+ $("#textbar").on('keypress', function(e) {
+        if (e.which == 13) {
+            e.preventDefault();
+            var guessVal = $("#textbar").val();
+            checkGuess(guessVal);
+        }
+    });
+
 function checkGuess(guessVal) {
 
     var previousGuess;
@@ -83,7 +91,8 @@ var HOT = 10;
 var WARM = 20;
 var COOL = 30;
 var COLD = 40;
-var ICEBABY = 50
+var ICEBABY = 50;
+
 
 if (difference <= BURNING) {
     $("#guide").css("background-color", "red");
@@ -118,9 +127,9 @@ else {
     $("#guide").css("background-color", "blue");
     $("#guidechange").text("Ice Baby");
 }
-
-
 }
+
+
 
 
 
