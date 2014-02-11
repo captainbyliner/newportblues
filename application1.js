@@ -25,6 +25,7 @@ $("#resetbutton").click(function() {
 
     checkGuess(guessVal);
     });
+
 });
 
 function checkGuess(guessVal) {
@@ -62,12 +63,14 @@ else if (guessVal < randomNumber) {
 
         $("#meter").css("background-color", "red");
         $("#textchange").text("Too Low!");
+        $('#textbar').val('');
 
 
 }
 else {
         $("#meter").css("background-color", "green");
         $("#textchange").text("Too High!");
+        $('#textbar').val('');
 
 
     }
