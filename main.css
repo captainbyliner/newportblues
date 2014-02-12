@@ -119,6 +119,13 @@ nav {
 		color:black;
 	}
 
+#meter:hover {
+	background-color:red;
+}
+
+#guide:hover {
+	background-color:yellow;
+}
 
 
 #checker {
@@ -240,6 +247,10 @@ h2 {
 	font-size:14px;
 	background-color:silver;
 	line-height:50px;
+}
+
+#guesses:hover {
+	background-color:green;
 }
 
 .clear { 
