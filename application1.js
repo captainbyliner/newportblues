@@ -48,6 +48,11 @@ if (isNaN(guessVal)) {
     return false;
 }
 
+if (guessVal > 100) {
+    alert("Please pick a number between 1 and 100");
+    return false;
+}
+
 guesses.push(guessVal);
 
 
@@ -64,7 +69,7 @@ if (guessVal == randomNumber) {
         $("#textbar").hide();
         $("#guessbutton").hide();
         $("#hiddendivtext").text("It took you " + guesses.length + " attempts");
-        $("#guesses").css("background-color", "#33CC33");
+        $("#guesses").css("background-color", "green");
 }
 
 else if (guessVal < randomNumber) {
@@ -93,8 +98,12 @@ var COOL = 30;
 var COLD = 40;
 var ICEBABY = 50;
 
+if (difference == 0) {
+    $("#guide").css("background-color", "purple");
+    $("#guidechange").text("Boom!")
+}
 
-if (difference <= BURNING) {
+else if (difference <= BURNING) {
     $("#guide").css("background-color", "red");
     $("#guidechange").text("Burning!");
 }
